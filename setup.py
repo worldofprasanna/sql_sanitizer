@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='sql_sanitizer',
-      version='0.1',
+      version='0.2',
       description='Utility to check if the given input is sanitized for sql injection',
       url='http://github.com/worldofprasanna/sql_sanitizer',
       author='Prasanna V',
