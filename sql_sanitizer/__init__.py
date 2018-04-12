@@ -24,6 +24,6 @@ def is_map_sanitized(data):
 
 
 def is_string_sanitized(data):
-    sanitized_string = re.sub('[\'";]', '', data)
+    sanitized_string = re.sub('[^a-zA-Z0-9_@#$.\s]', '', data)
     if len(data) != len(sanitized_string):
         raise ValueError('Input contains un sanitized characters')
